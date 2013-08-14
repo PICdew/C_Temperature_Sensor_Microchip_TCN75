@@ -1,3 +1,9 @@
+
+######################################################################
+##### Open sourced by IBEX, an electronic product design company #####
+#####    based in South East England.  http://www.ibexuk.com     #####
+######################################################################
+
 The Microchip TCN75 is an I2C Bus temperature sensor device. It provides accurate temperture measurement at the PCB for embedded designs.
 
 This driver provides the following functions:
