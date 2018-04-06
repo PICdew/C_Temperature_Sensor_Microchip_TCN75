@@ -89,7 +89,8 @@ BYTE read_temperature (SIGNED_WORD *temperature)
 		TCN75_I2C_READ_BYTE_START
 	#endif
 	*temperature = ((SIGNED_WORD)TCN75_I2C_READ_BYTE << 1);
-
+	if (*temperature & 0x0100)				//If value is negative then set all the high bits
+		*temperature |= 0xfe00
 
 	//Send Ack
 	TCN75_I2C_IDLE_I2C();
